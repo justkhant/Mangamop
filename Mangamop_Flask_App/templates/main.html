@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Mangamop</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='img/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='site.webmanifest') }}">
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/navbar.css') }}">
+
+    <nav class="navbar navbar-default">
+        <img class="logo" src="{{ url_for('static', filename = 'img/mangamop_icon.png') }}" />
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</smpan>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">MANGAMOP</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">BIOS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+</head>
+<body class="is-preload">
+    <div id="wrapper" class="divided">
+
+        <!-- Banner -->
+            <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+                <div class="content">
+                    <h1>What is Mangamop?</h1>
+                    <p class="major">Mangamop is an automated manga cleaning web application that uses a deep learning Pix2Pix model to translate images. (<a href="https://github.com/justkhant/Mangamop">Github</a>).</p>
+                    <p>Manga cleaning is often a difficult process that requires many steps and <i>a lot</i> of human oversight. But, with deep learning, we can simplify the process to a simple click of a button! (<a href=#EXAMPLES>See Examples</a>)</p>
+                    <p><strong>Upload your raw manga scans to see the magic happen!</strong> </p>
+    
+                    <ul class="actions stacked">
+                        <li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+                        <p><sub><i> ** This model still may not be able to clean manga as well as human cleaners. We simply hope running your raw scans through this model could help you start off with a better base scan and allow you to skip some of the inital steps! </i></sub></p>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="{{ url_for('static', filename = 'img/mangamop_story_diagram.png') }}" alt="" />
+                </div>
+            </section>
+
+        <!-- Items -->
+            <section class="wrapper style1 align-center">
+                <div class="inner">
+                    <h2>How it Works</h2>
+                    <p>Just drag-and-drop or upload your raw manga scans, wait for the model to process your images, and download the results. It's that easy!</p>
+                    <div class="items style3 medium onscroll-fade-in">
+                        <section>
+                            <span class="icon solid style2 major fa-upload"> </span>
+                            <h3>Step 1 - Upload</h3>
+                            <p>Upload multiple image files at once! The model was trained on raw <b>print</b> scans, which usually require a lot more work to clean as opposed to raw <b>digital</b> scans. For the best results, it is recommended that your manga raws are similar to some of the scans in the <a href="#">Examples</a> section. Of course, the model is still a work in progress, and hopefully in the future, it will become flexible enough to cover all types of raws.</p>
+                        </section>
+                        <section>
+                            <span class="icon solid style2 major fa-hourglass-half"></span>
+                            <h3>Step 2 - Wait</h3>
+                            <p>Once the images are uploaded, they will be processed through our model! Now all tha.</p>
+                        </section>
+                        <section>
+                            <span class="icon solid style2 major fa-download"></span>
+                            <h3>Step 3 - Download</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/jquery.scrollex.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/jquery.scrolly.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/browser.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/breakpoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/util.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+</body>
+</html>

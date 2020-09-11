@@ -1,0 +1,64 @@
+
+/* Navigation Section */
+.navbar {
+	margin-top: 3em;
+	margin-left: 140px;
+	margin-right: 50px;
+	border: none;
+	
+}
+
+.navbar a {
+	-moz-transition: color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	text-decoration: underline;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background-color: white;
+		color: black;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+	color: black;
+}
+
+.navbar-default .navbar-brand {
+	font-weight: 700;
+	font-size: 1.25em;
+	letter-spacing: 3px;
+}
+
+.container-fluid {
+	background-color: white;
+}
+
+.navbar-toggle {
+	border: none;
+}
+
+.logo {
+	position: absolute;
+	top: -15px;
+	left: -70px;
+	height: 90px;
+}
+
+.icon-bar {
+	color: black;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
